@@ -4,9 +4,17 @@
 }
 
 .header > h3, h5 {
-    margin: 0;
+    margin: 0; 
     padding-top: 20px;
     text-align: center;
 }
 
 /* Include any custom CSS styling here! */
+
+.written {
+    margin-left: 50px;;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+}

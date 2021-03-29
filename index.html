@@ -10,7 +10,7 @@
     </head>
 <body>
     <div class="header">
-        <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
+        <h3>Assignment 6 &laquo; Data Visualization Dashboard: Netflix Dataset &raquo;</h3>
     </div>
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
@@ -22,6 +22,68 @@
             <div id="graph3"></div>
         </div>
     </div>
+
+    <div class="written">
+        <h2>Written Questions</h2>
+        <h4>1. Describe how your dashboard answers the questions presented. You don't have to address every question directly, but should at a high level address the main questions.</h4>
+        <p>The first questions asks for the number of titles per genre on Netflex. To represent this, I created 
+            a bar graph, where the x axis represents the number of titles and the y axis represents the genre. 
+            I chose this type of graph to answer the questions because it clearly shows the breakdown by genre, 
+            and you can visually see the differences in the counts for each genre. The second question asks for 
+            the average runtime of movies for each year. I also used a bar graph to display this data because it 
+            is a clear visual indicator of how the runtime of movies in different years compare. Since this only asks 
+            for movies, I filtered out any data with the type of TV Show. IMPORTANT NOTE: If you can, please check my code implementation 
+            for this problem. For some reason, my function to find the averages finds the correct average but the number that is displayed 
+            on the graph is different, and I could not find out the reason why. For the third chart, I decided to answer 
+            the question of the top director-actor pairs based on the number of movies made together. To 
+            do so, I created another bar graph, where the x axis is the number of movies created together and 
+            the y axis is the director-actor pairs. For this graph, I decided to sort the data and only 
+            display the top 15 pairs because we only want to see the pairs with the most movies made together. Important 
+            Note: I decided to remove the y-axis label on this graph because it would have been cut off and unable to 
+            be read if it was present.
+        </p>
+        <h4>2. List 3 reasons why D3 was helpful and improved your visualization</h4>
+        <p>D3 was helpful for my visualization because it made drawing parts of the graph simpler. If I were to not 
+            use D3, I would probably have to resort to drawing on the screen with a canvas element, which is much harder 
+            and more time consuming, since you draw on a canvas line by line. Another reason why D3 was helpful was 
+            that it allowed me to add style to my graphs directly without having to add style in my css file. Lastly, D3 
+            was helpful because it was able to append the graph directly to the html and add more elements to it easily 
+            in order to show the graph on the screen.
+        </p>
+        <h4>3. List 3 reasons why D3 would not be the best tool for creating a visualization</h4>
+        <p>D3 would not be the best tool for visualization if you have a simpler dataset that you want to 
+            display. D3 is complicated and sometimes difficult to figure out, so if you can save time using an 
+            alternative source to display a smaller dataset, then that would be best. D3 also may not be the 
+            best tool in the case of dealing with extremely large datasets. It could take a long time for D3 to 
+            process all of this data, so if you are looking for time efficient ways to display a large amount 
+            of information visually, then D3 might not be the best choice. Lastly, D3 is not the best choice if 
+            your data is in an unconventional format. If your data is not in the form of a csv, json, or other common data 
+            format that D3 can process, then it would be difficult to find any other work around besides reformatting your data. 
+            Instead of reformatting data, which could be time consuming, it might be better to just find an alternative 
+            way to visualize the data.
+        </p>
+        <h3>Accessible Data Visualization</h3>
+        <h4>4. Evaluate the accessibility of your dashboard based on the readings in the “Before you begin” section. What kinds of users might find this dashboard accessible and who might have more difficulty? What additional actions might you take to make this dashboard more accessible to all audiences?</h4>
+        <p>People who do not have disabilities related to sight would easily find this dashboard accessible. 
+            However, those who are visually impaired may have a hard time seeing and interpreting the graphs on the screen. 
+            As stated in the article "A Comprehensive Guide to Accessible Data Visualization", there are people who are colorblind, have light sensitivity or other vision problems that affect how the dashboard would 
+            look to them. Therefore, one of the steps I took to mitigate these issues is to not have multiple colors 
+            on my graphs. All of the elements on my graph are one common color, and any outlines of shapes or text is black. This 
+            allows for colorblind people to still be able to read the graph. I also decided to use a darker instead of 
+            a lighter color, so that light sensitive people can still read the graph and not have a hard time seeing the 
+            bars against the white background. The article also mentioned making graphs and html elements screen reader 
+            friendly. An additional step I can take to make my dashboard more accessible is to add alt text to each 
+            html element, which tells a screen reader what an element on the screen represents.
+        </p>
+        <h4>5. Reflect on the stages of your design and implementation process when you could have taken steps to make your dashboard more accessible to all audiences. What are some factors that kept you from taking these steps?</h4>
+        <p>One of the stages of implementation where I could have taken more steps to make my dashboard 
+            more accessible was in adding alt text to html elements. What prevented me from doing this was not 
+            knowing how to do so within D3. Since the html elements are added through D3, I wasn't sure how I would 
+            be able to add alt text for the graphs. If the elements were already defined in the html file, it would 
+            be easier to just go inside and add it to whichever html tag necessary. However, this is not the case.
+        </p>
+    </div>
+
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>
